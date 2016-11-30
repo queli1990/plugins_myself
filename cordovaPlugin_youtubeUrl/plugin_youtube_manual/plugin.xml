@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.cordova.youtube" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>YouTubeUrl</name>
+    <description>get Youtube Url</description>
+    
+    <engines>
+        <engine name="cordova" version=">=0.0.1" />
+    </engines>
+    
+    <js-module name="getYoutubeUrl" src="www/getYoutubeUrl.js">
+        <clobbers target="getYoutubeUrl"/>
+    </js-module>
+    
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="YouTubeUrl">
+                <param name="ios-package" value="YouTubeUrl"/>
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/YouTubeUrl.h" />
+        <source-file src="src/ios/YouTubeUrl.m" />
+        
+
+        <header-file src="src/ios/XCDYouTubeClient.h" />
+        <source-file src="src/ios/XCDYouTubeClient.m" />
+        <header-file src="src/ios/XCDYouTubeError.h" />
+        <header-file src="src/ios/XCDYouTubeKit.h" />
+        <header-file src="src/ios/XCDYouTubeLogger.h" />
+        <header-file src="src/ios/XCDYouTubeLogger.m" />
+        <source-file src="src/ios/XCDYouTubeLogger+Private.h" />
+        <header-file src="src/ios/XCDYouTubeOperation.h" />
+        <source-file src="src/ios/XCDYouTubePlayerScript.h" />
+        <header-file src="src/ios/XCDYouTubePlayerScript.m" />
+        <source-file src="src/ios/XCDYouTubeVideo.h" />
+        <header-file src="src/ios/XCDYouTubeVideo.m" />
+        <source-file src="src/ios/XCDYouTubeVideo+Private.h" />
+        <source-file src="src/ios/XCDYouTubeVideoOperation.h" />
+        <source-file src="src/ios/XCDYouTubeVideoOperation.m" />
+        <source-file src="src/ios/XCDYouTubeVideoPlayerViewController.h" />
+        <source-file src="src/ios/XCDYouTubeVideoPlayerViewController.m" />
+        <source-file src="src/ios/XCDYouTubeVideoWebpage.h" />
+        <source-file src="src/ios/XCDYouTubeVideoWebpage.m" />
+
+        
+    </platform>
+    
+</plugin>

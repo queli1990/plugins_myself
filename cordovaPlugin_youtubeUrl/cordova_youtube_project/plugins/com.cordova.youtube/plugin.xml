@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.cordova.youtube" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>YouTubeUrl</name>
+    <description>get Youtube Url</description>
+    
+    <engines>
+        <engine name="cordova" version=">=0.0.1" />
+    </engines>
+    
+    <js-module name="getYoutubeUrl" src="www/getYoutubeUrl.js">
+        <clobbers target="getYoutubeUrl"/>
+    </js-module>
+    
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="YouTubeUrl">
+                <param name="ios-package" value="YouTubeUrl"/>
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/YouTubeUrl.h" />
+        <source-file src="src/ios/YouTubeUrl.m" />
+        
+    </platform>
+    
+</plugin>
