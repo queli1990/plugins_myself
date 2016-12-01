@@ -1,0 +1,10 @@
+start.sh
+app_setting.conf
+tools/android-toolchain*
+tools/nacl_sdk/pepper_49
+tools/nacl_sdk/pepper_49_update
+tools/nacl_sdk/sdk_cache/archives
+*.pyc
+*.DS_Store
+*.xcuserdatad
+out

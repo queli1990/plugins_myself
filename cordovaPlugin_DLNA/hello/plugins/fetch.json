@@ -1,0 +1,18 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.xx.example": {
+        "source": {
+            "type": "local",
+            "path": "/Users/holy/Desktop/test阶段/dlna_media_renderer---找不到插件"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
