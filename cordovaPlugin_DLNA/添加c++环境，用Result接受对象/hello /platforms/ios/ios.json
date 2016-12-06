@@ -1,0 +1,67 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"MediaRenderer\"><param name=\"ios-package\" value=\"MediaRendererPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MediaRenderer\"><param name=\"ios-package\" value=\"DialMediaRender\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSPhotoLibraryUsageDescription": [
+                        {
+                            "xml": "<string>$PHOTO_LIBRARY_USAGE_DESCRIPTION</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"MediaRenderer\"><param name=\"ios-package\" value=\"MediaRendererPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.xx"
+        },
+        "com.cordovaDlnaDemo.example": {
+            "PACKAGE_NAME": "com.xx"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.cordovaDlnaDemo.example.mediaRenderer",
+            "file": "plugins/com.cordovaDlnaDemo.example/www/mediaRenderer.js",
+            "pluginId": "com.cordovaDlnaDemo.example",
+            "clobbers": [
+                "mediaRenderer"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.0",
+        "com.cordovaDlnaDemo.example": "0.0.1"
+    }
+}
