@@ -62,12 +62,12 @@ private:
 
 @implementation MediaRendererPlugin
 
-- (void) mediarender_init:(CDVInvokedUrlCommand *)command{
+- (void) init:(CDVInvokedUrlCommand *)command{
     m_discovery = new MyDiscovery(self);
     NSLog(@"native ----- init methodÂ");
 }
 
-- (void) mediarender_scan:(CDVInvokedUrlCommand *)command {
+- (void) scan:(CDVInvokedUrlCommand *)command {
     if (!self.callback_scan_id) {
         self.callback_scan_id = command.callbackId;
     }
@@ -78,12 +78,12 @@ private:
     m_discovery -> scan(Discovery::MEDIA_RENDERER);
 }
 
-- (void) mediarender_stopScan:(CDVInvokedUrlCommand *)command{
+- (void) stopScan:(CDVInvokedUrlCommand *)command{
     m_discovery ->stop();
     NSLog(@"native ----- stop methodÂ");
 }
 
-- (void) mediarender_start:(CDVInvokedUrlCommand *)command {
+- (void) mediarenderer_start:(CDVInvokedUrlCommand *)command {
     NSLog(@"native ----- start methodÂ");
     
     NSArray *arr = command.arguments[0];
@@ -94,7 +94,7 @@ private:
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {
@@ -139,14 +139,14 @@ exec; \
 } \
 }
 
-- (void) mediarender_play:(CDVInvokedUrlCommand *)command{
+- (void) mediarenderer_play:(CDVInvokedUrlCommand *)command{
     NSString *hostName = command.arguments[0];
     
     vector<Service*> ls = m_discovery->service( Discovery::MEDIA_RENDERER );
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {
@@ -173,14 +173,14 @@ exec; \
     }
 }
 
-- (void) mediarender_pause:(CDVInvokedUrlCommand *)command{
+- (void) mediarenderer_pause:(CDVInvokedUrlCommand *)command{
     NSString *hostName = command.arguments[0];
     
     vector<Service*> ls = m_discovery->service( Discovery::MEDIA_RENDERER );
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {
@@ -207,7 +207,7 @@ exec; \
     }
 }
 
-- (void) mediarender_seek:(CDVInvokedUrlCommand *)command{
+- (void) mediarenderer_seek:(CDVInvokedUrlCommand *)command{
     NSArray *arr  = command.arguments[0];
     NSString *hostName = arr[0];
     NSString *secondStr = arr[1];
@@ -217,7 +217,7 @@ exec; \
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {
@@ -244,14 +244,14 @@ exec; \
     }
 }
 
-- (void) mediarender_stop:(CDVInvokedUrlCommand *)command{
+- (void) mediarenderer_stop:(CDVInvokedUrlCommand *)command{
     NSString *hostName = command.arguments[0];
     
     vector<Service*> ls = m_discovery->service( Discovery::MEDIA_RENDERER );
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {
@@ -278,7 +278,7 @@ exec; \
     }
 }
 
-- (void) mediarender_setVolume:(CDVInvokedUrlCommand *)command{
+- (void) mediarenderer_volume:(CDVInvokedUrlCommand *)command{
     NSArray *arr = command.arguments[0];
     NSString *hostName = arr[0];
     NSString *volumeStr = arr[1];
@@ -288,7 +288,7 @@ exec; \
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {
@@ -313,14 +313,14 @@ exec; \
     }
 }
 
-- (void) mediarender_getInfo:(CDVInvokedUrlCommand *)command{
+- (void) mediarenderer_getVideoInfo:(CDVInvokedUrlCommand *)command{
     NSString *hostName = command.arguments[0];
     
     vector<Service*> ls = m_discovery->service( Discovery::MEDIA_RENDERER );
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {
@@ -346,14 +346,14 @@ exec; \
     }
 }
 
-- (void) mediarender_getSytVolume:(CDVInvokedUrlCommand *)command{
+- (void) mediarenderer_getSysVolume:(CDVInvokedUrlCommand *)command{
     NSString *hostName = command.arguments[0];
     
     vector<Service*> ls = m_discovery->service( Discovery::MEDIA_RENDERER );
     for (int i = 0; i < ls.size(); i++) {
         MediaRenderer* mr = ls[i]->as_media_renderer();
         if ( mr ) {
-            const char* name = mr->get_friendly_name().c_str();
+            const char* name = mr->get_hostname().c_str();
             NSString *scanName = [NSString stringWithFormat:@"%s",name];
             NSLog(@"%s",name);
             if ([hostName isEqualToString:scanName]) {

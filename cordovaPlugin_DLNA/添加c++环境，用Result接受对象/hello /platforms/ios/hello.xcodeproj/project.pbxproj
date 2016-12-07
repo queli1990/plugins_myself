@@ -14,7 +14,7 @@
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		E61BE2101DEC3BE200CAD9C5 /* libdlnaclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E61BE20D1DEC3BDC00CAD9C5 /* libdlnaclient.a */; };
-		36926C97486F4D649F24F7E8 /* MediaRendererPlugin.mm in Resources */ = {isa = PBXBuildFile; fileRef = 1576458DD27B40FEAA4E0FFA /* MediaRendererPlugin.mm */; };
+		02661A0585254FC79AA72143 /* MediaRendererPlugin.mm in Resources */ = {isa = PBXBuildFile; fileRef = CD5C992561294AC98A79B071 /* MediaRendererPlugin.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +77,8 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = hello/config.xml; sourceTree = "<group>"; };
-		1576458DD27B40FEAA4E0FFA /* MediaRendererPlugin.mm */ = {isa = PBXFileReference; name = "MediaRendererPlugin.mm"; path = "com.cordovaDlnaDemo.example/MediaRendererPlugin.mm"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4FC7DE8BDB3E401ABE85CCD9 /* MediaRendererPlugin.h */ = {isa = PBXFileReference; name = "MediaRendererPlugin.h"; path = "com.cordovaDlnaDemo.example/MediaRendererPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CD5C992561294AC98A79B071 /* MediaRendererPlugin.mm */ = {isa = PBXFileReference; name = "MediaRendererPlugin.mm"; path = "dlna_media_renderer/MediaRendererPlugin.mm"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A82F25D2AC624457ADFC26BD /* MediaRendererPlugin.h */ = {isa = PBXFileReference; name = "MediaRendererPlugin.h"; path = "dlna_media_renderer/MediaRendererPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +184,8 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				1576458DD27B40FEAA4E0FFA /* MediaRendererPlugin.mm */,
-				4FC7DE8BDB3E401ABE85CCD9 /* MediaRendererPlugin.h */,
+				CD5C992561294AC98A79B071 /* MediaRendererPlugin.mm */,
+				A82F25D2AC624457ADFC26BD /* MediaRendererPlugin.h */,
 			);
 			name = Plugins;
 			path = hello/Plugins;
@@ -337,7 +337,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				8E8F6B720E1D4B27BBF67BC6 /* MediaRendererPlugin.mm in Sources */,
-				36926C97486F4D649F24F7E8 /* MediaRendererPlugin.mm in Resources */,
+				02661A0585254FC79AA72143 /* MediaRendererPlugin.mm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.xx"
         },
-        "com.cordovaDlnaDemo.example": {
+        "dlna_media_renderer": {
             "PACKAGE_NAME": "com.xx"
         }
     },

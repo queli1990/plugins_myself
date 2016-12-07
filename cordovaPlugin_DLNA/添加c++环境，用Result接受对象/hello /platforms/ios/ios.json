@@ -45,16 +45,16 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.xx"
         },
-        "com.cordovaDlnaDemo.example": {
+        "dlna_media_renderer": {
             "PACKAGE_NAME": "com.xx"
         }
     },
     "dependent_plugins": {},
     "modules": [
         {
-            "id": "com.cordovaDlnaDemo.example.mediaRenderer",
-            "file": "plugins/com.cordovaDlnaDemo.example/www/mediaRenderer.js",
-            "pluginId": "com.cordovaDlnaDemo.example",
+            "id": "dlna_media_renderer.mediaRenderer",
+            "file": "plugins/dlna_media_renderer/www/mediaRenderer.js",
+            "pluginId": "dlna_media_renderer",
             "clobbers": [
                 "mediaRenderer"
             ]
@@ -62,6 +62,6 @@
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.3.0",
-        "com.cordovaDlnaDemo.example": "0.0.1"
+        "dlna_media_renderer": "0.0.1"
     }
 }
