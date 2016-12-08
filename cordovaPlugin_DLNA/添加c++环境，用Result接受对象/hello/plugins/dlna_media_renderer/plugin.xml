@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="dlna_media_renderer"
+	version="0.0.1" >
+	<name>DLNA MEDIA RENDERER 方式扫描</name>
+	<description>这一个让web使用原生的投屏的插件</description>
+	
+    <js-module src="www/dlna.js" name="dlna">
+		<clobbers target="dlna" />
+	</js-module>
+
+
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="DLNA">
+                <param name="ios-package" value="DLNAPlugin"/>
+            </feature>
+        </config-file>
+    
+        <header-file src="src/ios/DLNAPlugin.h" />
+        <source-file src="src/ios/DLNAPlugin.mm" />
+    
+    </platform>
+
+
+	<platform name="android">
+		<!-- src="开头不要有/，自动就可以找到当前目录地址，target-dir最后一级目录也不要添加/，都是自动添加的，加上反而出错" -->
+		<source-file src="src/android/MediaRendererPlugin.java" target-dir="src/com/vego/tv/plugin" />
+		<source-file src="src/android/Dial.java" target-dir="src/com/gochinatv" />
+		<source-file src="src/android/Discovery.java" target-dir="src/com/gochinatv" />
+		<source-file src="src/android/MediaRenderer.java" target-dir="src/com/gochinatv" />
+		<source-file src="src/android/Util.java" target-dir="src/com/gochinatv" />
+		<source-file src="libs/armeabi/libdlnaclient.so" target-dir="libs/armeabi" />
+		<source-file src="libs/x86/libdlnaclient.so" target-dir="libs/x86" />
+
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="MediaRenderer">
+				<param name="android-package" value="com.vego.tv.plugin.MediaRendererPlugin"/>
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">  
+    </config-file> 
+	</platform>
+
+</plugin>
