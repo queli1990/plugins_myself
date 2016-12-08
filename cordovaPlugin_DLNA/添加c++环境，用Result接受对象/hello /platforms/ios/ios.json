@@ -1,0 +1,67 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"MediaRenderer\"><param name=\"ios-package\" value=\"MediaRendererPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"MediaRenderer\"><param name=\"ios-package\" value=\"DialMediaRender\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSPhotoLibraryUsageDescription": [
+                        {
+                            "xml": "<string>$PHOTO_LIBRARY_USAGE_DESCRIPTION</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"DLNA\"><param name=\"ios-package\" value=\"DLNAPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.xx"
+        },
+        "dlna_media_renderer": {
+            "PACKAGE_NAME": "com.xx"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "dlna_media_renderer.dlna",
+            "file": "plugins/dlna_media_renderer/www/dlna.js",
+            "pluginId": "dlna_media_renderer",
+            "clobbers": [
+                "dlna"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.0",
+        "dlna_media_renderer": "0.0.1"
+    }
+}
