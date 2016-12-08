@@ -45,91 +45,121 @@
                             var sysVolume = 0;
                             
                             function doMol() {
-                                mediaRenderer.test(function(meg){
+                                dlna.test(function(meg){
                                                     alert('succ'+meg);
                                                    },function(meg){
                                                     alert('error'+meg);
                                                    },"h5");
                             }
                             function init(){
-                                mediaRenderer.init();
+                                dlna.init();
                             }
                             function scan() {
-                                mediaRenderer.scan(function(meg){
+                                dlna.scan(function(meg){
                                                         alert('scan_success'+meg);
                                                    },function(error){
                                                         alert('error'+error);
                                                    });
                             }
                             function stopScan(){
-                                mediaRenderer.stopScan();
+                                dlna.stopScan();
                             }
                             function start () {
                                 var startArr = new Array();
                                 startArr[0] = '10.2.0.214';
                                 startArr[1] = 'http://huace.cdn.ottcloud.tv/huace/videos/dst/2016/08/14461-ai-de-zhui-zong-01-ji_201608180551/14461-ai-de-zhui-zong-01-ji.m3u8';
-                                mediaRenderer.start(function(mes){
+                                dlna.start(startArr,function(mes){
                                                         alert(mes);
                                                     },function(mes){
                                                         alert(mes);
-                                                    },startArr);
+                                                    });
                             }
                             function stop () {
-                                mediaRenderer.stop(function(meg){
+                                dlna.stop('10.2.0.214',function(meg){
                                                         alert(meg);
                                                    },function(meg){
                                                         alert(meg);
-                                                   },'10.2.0.214')
+                                                   })
                             }
                             function play () {
-                                mediaRenderer.play(function(meg){
+                                dlna.play('10.2.0.214',function(meg){
                                                         alert(meg);
                                                    },function(meg){
                                                         alert(meg);
-                                                   },'10.2.0.214');
+                                                   });
                             }
                             function pause () {
-                                mediaRenderer.pause(function(meg){
+                                dlna.pause('10.2.0.214',function(meg){
                                                         alert(meg);
                                                     },function(meg){
                                                         alert(meg);
-                                                    },'10.2.0.214');
+                                                    });
                             }
                             function setVolume(){
                                 var volumeArr = new Array();
                                 volumeArr[0] = '10.2.0.214';
                                 volumeArr[1] = '0';
-                                mediaRenderer.setVolume(function(meg){
+                                dlna.setVolume(volumeArr,function(meg){
                                                             alert(meg);
                                                         },function(meg){
                                                             alert(meg);
-                                                        },volumeArr);
+                                                        });
                             }
                             function getSysVolume (){
-                                mediaRenderer.getSysVolume(function(meg){
+                                dlna.getSysVolume('10.2.0.214',function(meg){
                                                             alert(meg);
                                                            },function(meg){
                                                             alert(meg);
-                                                           },'10.2.0.214');
+                                                           });
                             }
                             function getVideoInfo(){
-                                mediaRenderer.getVideoInfo(function(meg){
+                                dlna.getVideoInfo('10.2.0.214',function(meg){
                                                                 alert(meg);
                                                            },function(meg){
                                                                 alert(meg);
-                                                           },'10.2.0.214');
+                                                           });
                             }
                             function seek () {
                                 var seekArr = new Array();
                                 seekArr[0] = '10.2.0.214';
                                 seekArr[1] = '8';
-                                mediaRenderer.seek(function(meg){
+                                dlna.seek(seekArr,function(meg){
                                                         alert(meg);
                                                    },function(meg){
                                                         alert(meg);
-                                                   },seekArr);
+                                                   });
                             }
-                        
+                            function launch(){
+                                var launchArr = new Array();
+                                launchArr[0] = '172.20.10.2';
+                                launchArr[1] = 'dev';
+                                launchArr[2] = '123';
+                                dlna.launchApp(launchArr,function(mes){
+                                                    alert(mes);
+                                               },function(mes){
+                                                    alert(mes);
+                                               });
+                            }
+                            function stopLaunch(){
+                                var stopLaunchArr = new Array();
+                                stopLaunchArr[0] = '172.20.10.2';
+                                stopLaunchArr[1] = 'dev';
+                                dlna.stopApp(stopLaunchArr,function(mes){
+                                                    alert(mes);
+                                               },function(mes){
+                                                    alert(mes);
+                                               });
+                            }
+                            function getStatus(){
+                                var statusArr = new Array();
+                                statusArr[0] = '172.20.10.2';
+                                statusArr[1] = 'dev';
+                                dlna.getAppStatus(statusArr,function(mes){
+                                             alert(mes);
+                                             },function(mes){
+                                             alert(mes);
+                                             });
+                            }
                         
                             </script>
                         </head>
@@ -155,7 +185,9 @@
             <button onclick="getSysVolume();">getSysVolume</button>
             <button onclick="getVideoInfo();">getVideoInfo</button>
             <button onclick="seek();">seek</button>
-
+            <button onclick="launch();">launch</button>
+            <button onclick="stopLaunch();">stopLaunch</button>
+            <button onclick="getStatus();">getStatus</button>
             <br/>
             
         </div>

@@ -4,21 +4,22 @@
 	version="0.0.1" >
 	<name>DLNA MEDIA RENDERER 方式扫描</name>
 	<description>这一个让web使用原生的投屏的插件</description>
-	<js-module src="www/mediaRenderer.js" name="mediaRenderer">
-		<clobbers target="mediaRenderer" />
+	
+    <js-module src="www/dlna.js" name="dlna">
+		<clobbers target="dlna" />
 	</js-module>
 
 
 
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="MediaRenderer">
-                <param name="ios-package" value="MediaRendererPlugin"/>
+            <feature name="DLNA">
+                <param name="ios-package" value="DLNAPlugin"/>
             </feature>
         </config-file>
     
-        <header-file src="src/ios/MediaRendererPlugin.h" />
-        <source-file src="src/ios/MediaRendererPlugin.mm" />
+        <header-file src="src/ios/DLNAPlugin.h" />
+        <source-file src="src/ios/DLNAPlugin.mm" />
     
     </platform>
 

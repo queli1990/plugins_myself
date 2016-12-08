@@ -1,11 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "dlna_media_renderer.mediaRenderer",
-        "file": "plugins/dlna_media_renderer/www/mediaRenderer.js",
+        "id": "dlna_media_renderer.dlna",
+        "file": "plugins/dlna_media_renderer/www/dlna.js",
         "pluginId": "dlna_media_renderer",
         "clobbers": [
-            "mediaRenderer"
+            "dlna"
         ]
     }
 ];

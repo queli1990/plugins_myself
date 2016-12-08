@@ -10,7 +10,7 @@
     "dlna_media_renderer": {
         "source": {
             "type": "local",
-            "path": "/Users/holy/Desktop/未命名文件夹/cordova-plugin-dial"
+            "path": "/Users/holy/Desktop/cordova-plugin-dial"
         },
         "is_top_level": true,
         "variables": {}

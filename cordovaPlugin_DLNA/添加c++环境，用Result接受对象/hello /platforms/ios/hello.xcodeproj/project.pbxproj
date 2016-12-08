@@ -13,8 +13,8 @@
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		E61BE2101DEC3BE200CAD9C5 /* libdlnaclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E61BE20D1DEC3BDC00CAD9C5 /* libdlnaclient.a */; };
-		02661A0585254FC79AA72143 /* MediaRendererPlugin.mm in Resources */ = {isa = PBXBuildFile; fileRef = CD5C992561294AC98A79B071 /* MediaRendererPlugin.mm */; };
+		E63257FC1DF938770088051B /* libdlnaclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E63257F91DF938730088051B /* libdlnaclient.a */; };
+		7D06FA82094D4438A5C060AC /* DLNAPlugin.mm in Resources */ = {isa = PBXBuildFile; fileRef = 6031DA6751BA4A7DBEBDF890 /* DLNAPlugin.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,23 +32,23 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
-		E61BE20A1DEC3BDC00CAD9C5 /* PBXContainerItemProxy */ = {
+		E63257F61DF938730088051B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E61BE2041DEC3BDC00CAD9C5 /* dlnaclient.xcodeproj */;
+			containerPortal = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BF9D5EDD1DAE18B200964DAD;
 			remoteInfo = dlnaclient_test;
 		};
-		E61BE20C1DEC3BDC00CAD9C5 /* PBXContainerItemProxy */ = {
+		E63257F81DF938730088051B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E61BE2041DEC3BDC00CAD9C5 /* dlnaclient.xcodeproj */;
+			containerPortal = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BF74282C1DBA26C10020360C;
 			remoteInfo = dlnaclient;
 		};
-		E61BE20E1DEC3BDC00CAD9C5 /* PBXContainerItemProxy */ = {
+		E63257FA1DF938730088051B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E61BE2041DEC3BDC00CAD9C5 /* dlnaclient.xcodeproj */;
+			containerPortal = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BFEE82161DC9D1C70060200C;
 			remoteInfo = dlnaclient_ios_demo;
@@ -72,13 +72,13 @@
 		32CA4F630368D1EE00C91783 /* hello-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hello-Prefix.pch"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = hello/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* hello-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "hello-Info.plist"; path = "hello/hello-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		E61BE2041DEC3BDC00CAD9C5 /* dlnaclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dlnaclient.xcodeproj; path = "dial-master/dlnaclient.xcodeproj"; sourceTree = "<group>"; };
+		E63257F01DF938730088051B /* dlnaclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dlnaclient.xcodeproj; path = dial/dlnaclient.xcodeproj; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = hello/config.xml; sourceTree = "<group>"; };
-		CD5C992561294AC98A79B071 /* MediaRendererPlugin.mm */ = {isa = PBXFileReference; name = "MediaRendererPlugin.mm"; path = "dlna_media_renderer/MediaRendererPlugin.mm"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A82F25D2AC624457ADFC26BD /* MediaRendererPlugin.h */ = {isa = PBXFileReference; name = "MediaRendererPlugin.h"; path = "dlna_media_renderer/MediaRendererPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6031DA6751BA4A7DBEBDF890 /* DLNAPlugin.mm */ = {isa = PBXFileReference; name = "DLNAPlugin.mm"; path = "dlna_media_renderer/DLNAPlugin.mm"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C5798F2AB02D429397C81F84 /* DLNAPlugin.h */ = {isa = PBXFileReference; name = "DLNAPlugin.h"; path = "dlna_media_renderer/DLNAPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61BE2101DEC3BE200CAD9C5 /* libdlnaclient.a in Frameworks */,
+				E63257FC1DF938770088051B /* libdlnaclient.a in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +118,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				E61BE2041DEC3BDC00CAD9C5 /* dlnaclient.xcodeproj */,
+				E63257F01DF938730088051B /* dlnaclient.xcodeproj */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
@@ -184,19 +184,19 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				CD5C992561294AC98A79B071 /* MediaRendererPlugin.mm */,
-				A82F25D2AC624457ADFC26BD /* MediaRendererPlugin.h */,
+				6031DA6751BA4A7DBEBDF890 /* DLNAPlugin.mm */,
+				C5798F2AB02D429397C81F84 /* DLNAPlugin.h */,
 			);
 			name = Plugins;
 			path = hello/Plugins;
 			sourceTree = SOURCE_ROOT;
 		};
-		E61BE2051DEC3BDC00CAD9C5 /* Products */ = {
+		E63257F11DF938730088051B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E61BE20B1DEC3BDC00CAD9C5 /* dlnaclient_test */,
-				E61BE20D1DEC3BDC00CAD9C5 /* libdlnaclient.a */,
-				E61BE20F1DEC3BDC00CAD9C5 /* dlnaclient_ios_demo.app */,
+				E63257F71DF938730088051B /* dlnaclient_test */,
+				E63257F91DF938730088051B /* libdlnaclient.a */,
+				E63257FB1DF938730088051B /* dlnaclient_ios_demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +239,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = L83CXR88RY;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "hello" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -255,8 +260,8 @@
 					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
 				},
 				{
-					ProductGroup = E61BE2051DEC3BDC00CAD9C5 /* Products */;
-					ProjectRef = E61BE2041DEC3BDC00CAD9C5 /* dlnaclient.xcodeproj */;
+					ProductGroup = E63257F11DF938730088051B /* Products */;
+					ProjectRef = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -274,25 +279,25 @@
 			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E61BE20B1DEC3BDC00CAD9C5 /* dlnaclient_test */ = {
+		E63257F71DF938730088051B /* dlnaclient_test */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = dlnaclient_test;
-			remoteRef = E61BE20A1DEC3BDC00CAD9C5 /* PBXContainerItemProxy */;
+			remoteRef = E63257F61DF938730088051B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E61BE20D1DEC3BDC00CAD9C5 /* libdlnaclient.a */ = {
+		E63257F91DF938730088051B /* libdlnaclient.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libdlnaclient.a;
-			remoteRef = E61BE20C1DEC3BDC00CAD9C5 /* PBXContainerItemProxy */;
+			remoteRef = E63257F81DF938730088051B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E61BE20F1DEC3BDC00CAD9C5 /* dlnaclient_ios_demo.app */ = {
+		E63257FB1DF938730088051B /* dlnaclient_ios_demo.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = dlnaclient_ios_demo.app;
-			remoteRef = E61BE20E1DEC3BDC00CAD9C5 /* PBXContainerItemProxy */;
+			remoteRef = E63257FA1DF938730088051B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -336,8 +341,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				8E8F6B720E1D4B27BBF67BC6 /* MediaRendererPlugin.mm in Sources */,
-				02661A0585254FC79AA72143 /* MediaRendererPlugin.mm in Resources */,
+				55FC83B173344BDDB7B524B9 /* DLNAPlugin.mm in Sources */,
+				7D06FA82094D4438A5C060AC /* DLNAPlugin.mm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +369,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = L83CXR88RY;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -375,9 +381,9 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
-					"$(SRCROOT)/dial-master",
-					"$(SRCROOT)/dial-master/depe/rapidjson/include",
-					"$(SRCROOT)/dial-master/depe/tinyxml2",
+					"$(SRCROOT)/dial",
+					"$(SRCROOT)/dial/depe/rapidjson/include",
+					"$(SRCROOT)/dial/depe/tinyxml2",
 				);
 				INFOPLIST_FILE = "hello/hello-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
@@ -398,6 +404,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = L83CXR88RY;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hello/hello-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
