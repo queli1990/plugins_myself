@@ -1,0 +1,18 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "dlna_media_renderer": {
+        "source": {
+            "type": "local",
+            "path": "/Users/holy/Desktop/未命名文件夹/cordova-plugin-dial"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

@@ -4,8 +4,7 @@
 	version="0.0.1" >
 	<name>DLNA MEDIA RENDERER 方式扫描</name>
 	<description>这一个让web使用原生的投屏的插件</description>
-	
-    <js-module src="www/dlna.js" name="dlna">
+	<js-module src="www/dlna.js" name="dlna">
 		<clobbers target="dlna" />
 	</js-module>
 
@@ -46,7 +45,7 @@
         <header-file src="src/ios/strtod.h" />
         <header-file src="src/ios/DLNAPlugin.h" />
         <source-file src="src/ios/DLNAPlugin.mm" />
-        
+    
         <header-file src="src/ios/dial.h" />
         <source-file src="src/ios/dial.cc" />
         <header-file src="src/ios/discovery.h" />
@@ -63,17 +62,38 @@
         <source-file src="src/ios/tinyxml2.cpp" />
         <header-file src="src/ios/util.h" />
         <source-file src="src/ios/util.cc" />
-        
+    
         <header-file src="src/ios/document.h" />
         <header-file src="src/ios/writer.h" />
-
-
+    
+    
     </platform>
 
 
 	<platform name="android">
 		<!-- src="开头不要有/，自动就可以找到当前目录地址，target-dir最后一级目录也不要添加/，都是自动添加的，加上反而出错" -->
-		<source-file src="src/android/MediaRendererPlugin.java" target-dir="src/com/vego/tv/plugin" />
+		<source-file src="src/android/DLNAPlugin.java" target-dir="src/com/vego/tv/plugin" />
+
+		<source-file src="src/android/dlna/ActionExecutor.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/IActionReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/InitReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/ScanReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/StopScanReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/StartReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/PlayReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/PauseReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/VolumeReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/SysVolumeReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/VideoInfoReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/SeekReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/StopVideoReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/HideReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/LaunchReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/StatusReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/StopAppReceiver.java" target-dir="src/com/vego/tv/plugin/dlna" />
+		<source-file src="src/android/dlna/AsyncDlnaTask.java" target-dir="src/com/vego/tv/plugin/dlna" />
+
+
 		<source-file src="src/android/Dial.java" target-dir="src/com/gochinatv" />
 		<source-file src="src/android/Discovery.java" target-dir="src/com/gochinatv" />
 		<source-file src="src/android/MediaRenderer.java" target-dir="src/com/gochinatv" />
@@ -82,8 +102,8 @@
 		<source-file src="libs/x86/libdlnaclient.so" target-dir="libs/x86" />
 
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="MediaRenderer">
-				<param name="android-package" value="com.vego.tv.plugin.MediaRendererPlugin"/>
+			<feature name="DLNA">
+				<param name="android-package" value="com.vego.tv.plugin.DLNAPlugin"/>
 			</feature>
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/*">  

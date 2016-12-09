@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		E63257FC1DF938770088051B /* libdlnaclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E63257F91DF938730088051B /* libdlnaclient.a */; };
+		0D97C57DC8B142B49F66DC5C /* DLNAPlugin.mm in Resources */ = {isa = PBXBuildFile; fileRef = 66F5C884A9A94D1EB1CAC340 /* DLNAPlugin.mm */; };
+		148C329EF30746E9972133F6 /* dial.cc in Resources */ = {isa = PBXBuildFile; fileRef = 83FF5F72EF004D3BA5D7B7D3 /* dial.cc */; };
+		0FF904A44FC34D57806015F7 /* discovery.cc in Resources */ = {isa = PBXBuildFile; fileRef = 229B3F4485CF40B0907F7127 /* discovery.cc */; };
+		CEC826860EDD4C0FB674985E /* http.cc in Resources */ = {isa = PBXBuildFile; fileRef = 3BD3C3EE3F05489E8660F91B /* http.cc */; };
+		0F8E11048B5B4030B00E80B6 /* log.cc in Resources */ = {isa = PBXBuildFile; fileRef = 4CC7E4985F604A118CFB40C5 /* log.cc */; };
+		33A1D83579904BCFB275B90F /* media-renderer.cc in Resources */ = {isa = PBXBuildFile; fileRef = 9D202D82357340C5A380CAA0 /* media-renderer.cc */; };
+		8DB02354BA4A4661820AA890 /* service.cc in Resources */ = {isa = PBXBuildFile; fileRef = 40A97FB29E224399995F1B5D /* service.cc */; };
+		7A7B3FD26E1843FF8931E89D /* tinyxml2.cpp in Resources */ = {isa = PBXBuildFile; fileRef = DB8E27E927FA439387F69216 /* tinyxml2.cpp */; };
+		E60E7AB09E4E4FA0A76AD5A1 /* util.cc in Resources */ = {isa = PBXBuildFile; fileRef = 4A7CFBD59BA147FDA774E47F /* util.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		E63257F61DF938730088051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF9D5EDD1DAE18B200964DAD;
+			remoteInfo = dlnaclient_test;
+		};
+		E63257F81DF938730088051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF74282C1DBA26C10020360C;
+			remoteInfo = dlnaclient;
+		};
+		E63257FA1DF938730088051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BFEE82161DC9D1C70060200C;
+			remoteInfo = dlnaclient_ios_demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hello/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* hello-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hello-Prefix.pch"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = hello/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* hello-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "hello-Info.plist"; path = "hello/hello-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		E63257F01DF938730088051B /* dlnaclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dlnaclient.xcodeproj; path = dial/dlnaclient.xcodeproj; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = hello/config.xml; sourceTree = "<group>"; };
+		66F5C884A9A94D1EB1CAC340 /* DLNAPlugin.mm */ = {isa = PBXFileReference; name = "DLNAPlugin.mm"; path = "dlna_media_renderer/DLNAPlugin.mm"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83FF5F72EF004D3BA5D7B7D3 /* dial.cc */ = {isa = PBXFileReference; name = "dial.cc"; path = "dlna_media_renderer/dial.cc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		229B3F4485CF40B0907F7127 /* discovery.cc */ = {isa = PBXFileReference; name = "discovery.cc"; path = "dlna_media_renderer/discovery.cc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3BD3C3EE3F05489E8660F91B /* http.cc */ = {isa = PBXFileReference; name = "http.cc"; path = "dlna_media_renderer/http.cc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4CC7E4985F604A118CFB40C5 /* log.cc */ = {isa = PBXFileReference; name = "log.cc"; path = "dlna_media_renderer/log.cc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9D202D82357340C5A380CAA0 /* media-renderer.cc */ = {isa = PBXFileReference; name = "media-renderer.cc"; path = "dlna_media_renderer/media-renderer.cc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		40A97FB29E224399995F1B5D /* service.cc */ = {isa = PBXFileReference; name = "service.cc"; path = "dlna_media_renderer/service.cc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB8E27E927FA439387F69216 /* tinyxml2.cpp */ = {isa = PBXFileReference; name = "tinyxml2.cpp"; path = "dlna_media_renderer/tinyxml2.cpp"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4A7CFBD59BA147FDA774E47F /* util.cc */ = {isa = PBXFileReference; name = "util.cc"; path = "dlna_media_renderer/util.cc"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		51EE7E1D19914D48BBCF270A /* allocators.h */ = {isa = PBXFileReference; name = "allocators.h"; path = "dlna_media_renderer/allocators.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DCF12600EB04447EAD96336C /* biginteger.h */ = {isa = PBXFileReference; name = "biginteger.h"; path = "dlna_media_renderer/biginteger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E60B1A80EE01446FAB7D5F8F /* diyfp.h */ = {isa = PBXFileReference; name = "diyfp.h"; path = "dlna_media_renderer/diyfp.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		612439B98EB2431AB922F767 /* dtoa.h */ = {isa = PBXFileReference; name = "dtoa.h"; path = "dlna_media_renderer/dtoa.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		BEBAE87F645C4836A7DB32C5 /* en.h */ = {isa = PBXFileReference; name = "en.h"; path = "dlna_media_renderer/en.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D7AF1CAA454B4D09804E9697 /* encodedstream.h */ = {isa = PBXFileReference; name = "encodedstream.h"; path = "dlna_media_renderer/encodedstream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		48BD26C9EF914A5089890A72 /* encodings.h */ = {isa = PBXFileReference; name = "encodings.h"; path = "dlna_media_renderer/encodings.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		91F8A7F44E874391ACB09606 /* error.h */ = {isa = PBXFileReference; name = "error.h"; path = "dlna_media_renderer/error.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8582C353C51742D4970F6E69 /* filereadstream.h */ = {isa = PBXFileReference; name = "filereadstream.h"; path = "dlna_media_renderer/filereadstream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		721B382F2A48449793F969F3 /* filestream.h */ = {isa = PBXFileReference; name = "filestream.h"; path = "dlna_media_renderer/filestream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3321DDC28A00421899026C67 /* filewritestream.h */ = {isa = PBXFileReference; name = "filewritestream.h"; path = "dlna_media_renderer/filewritestream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2E801FE467794B2D9758C0BD /* ieee754.h */ = {isa = PBXFileReference; name = "ieee754.h"; path = "dlna_media_renderer/ieee754.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1037D93B9E1C4AA6AE2B8AB6 /* inttypes.h */ = {isa = PBXFileReference; name = "inttypes.h"; path = "dlna_media_renderer/inttypes.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		06D035846E954DD7A0E20369 /* itoa.h */ = {isa = PBXFileReference; name = "itoa.h"; path = "dlna_media_renderer/itoa.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		01AE97B3DCC84A1FBE915D16 /* memorybuffer.h */ = {isa = PBXFileReference; name = "memorybuffer.h"; path = "dlna_media_renderer/memorybuffer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1C2545BB8AAA42A1AB129B52 /* memorystream.h */ = {isa = PBXFileReference; name = "memorystream.h"; path = "dlna_media_renderer/memorystream.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		255981ECD6D8432792AD27A2 /* meta.h */ = {isa = PBXFileReference; name = "meta.h"; path = "dlna_media_renderer/meta.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EF17CA3172DD44048A03E63D /* pow10.h */ = {isa = PBXFileReference; name = "pow10.h"; path = "dlna_media_renderer/pow10.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		71927C5ADE3D46049BD756B2 /* prettywriter.h */ = {isa = PBXFileReference; name = "prettywriter.h"; path = "dlna_media_renderer/prettywriter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		803CED3E54FF4171B807B9BD /* rapidjson.h */ = {isa = PBXFileReference; name = "rapidjson.h"; path = "dlna_media_renderer/rapidjson.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4F8080B3173A404F9E7BD292 /* reader.h */ = {isa = PBXFileReference; name = "reader.h"; path = "dlna_media_renderer/reader.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		001BFB567BCE4BF284B182CC /* stack.h */ = {isa = PBXFileReference; name = "stack.h"; path = "dlna_media_renderer/stack.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		894F2C80B33D49DB9BC8892D /* stdint.h */ = {isa = PBXFileReference; name = "stdint.h"; path = "dlna_media_renderer/stdint.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5D8E9545EF564A0DA2F035AD /* strfunc.h */ = {isa = PBXFileReference; name = "strfunc.h"; path = "dlna_media_renderer/strfunc.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		263CBAC91B4F4097A937DFAC /* stringbuffer.h */ = {isa = PBXFileReference; name = "stringbuffer.h"; path = "dlna_media_renderer/stringbuffer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		44FC13AC08484FDD8E4E0D51 /* strtod.h */ = {isa = PBXFileReference; name = "strtod.h"; path = "dlna_media_renderer/strtod.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		79BF0AFA2CDB41BFB5733F0A /* DLNAPlugin.h */ = {isa = PBXFileReference; name = "DLNAPlugin.h"; path = "dlna_media_renderer/DLNAPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9D619FE2E1554330AF65B422 /* dial.h */ = {isa = PBXFileReference; name = "dial.h"; path = "dlna_media_renderer/dial.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		5F326F9AA7104149BF910709 /* discovery.h */ = {isa = PBXFileReference; name = "discovery.h"; path = "dlna_media_renderer/discovery.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		EF89F837D0074DB8AC321928 /* http.h */ = {isa = PBXFileReference; name = "http.h"; path = "dlna_media_renderer/http.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9B321E80A9A84A9D937629D2 /* log.h */ = {isa = PBXFileReference; name = "log.h"; path = "dlna_media_renderer/log.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4F03F6943D524978A3248932 /* media-renderer.h */ = {isa = PBXFileReference; name = "media-renderer.h"; path = "dlna_media_renderer/media-renderer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2459B85A6DF142D097DA9E2B /* service.h */ = {isa = PBXFileReference; name = "service.h"; path = "dlna_media_renderer/service.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4C6905D5E25A401CBFBCA86E /* tinyxml2.h */ = {isa = PBXFileReference; name = "tinyxml2.h"; path = "dlna_media_renderer/tinyxml2.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C66D776E8AFE422C9AC121B3 /* util.h */ = {isa = PBXFileReference; name = "util.h"; path = "dlna_media_renderer/util.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FB56A9D88B404F439E2AF2C9 /* document.h */ = {isa = PBXFileReference; name = "document.h"; path = "dlna_media_renderer/document.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7488336F7F74499FAAC9A60A /* writer.h */ = {isa = PBXFileReference; name = "writer.h"; path = "dlna_media_renderer/writer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63257FC1DF938770088051B /* libdlnaclient.a in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = hello/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* hello.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E63257F01DF938730088051B /* dlnaclient.xcodeproj */,
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* hello-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = hello;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* hello-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = hello/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				66F5C884A9A94D1EB1CAC340 /* DLNAPlugin.mm */,
+				83FF5F72EF004D3BA5D7B7D3 /* dial.cc */,
+				229B3F4485CF40B0907F7127 /* discovery.cc */,
+				3BD3C3EE3F05489E8660F91B /* http.cc */,
+				4CC7E4985F604A118CFB40C5 /* log.cc */,
+				9D202D82357340C5A380CAA0 /* media-renderer.cc */,
+				40A97FB29E224399995F1B5D /* service.cc */,
+				DB8E27E927FA439387F69216 /* tinyxml2.cpp */,
+				4A7CFBD59BA147FDA774E47F /* util.cc */,
+				51EE7E1D19914D48BBCF270A /* allocators.h */,
+				DCF12600EB04447EAD96336C /* biginteger.h */,
+				E60B1A80EE01446FAB7D5F8F /* diyfp.h */,
+				612439B98EB2431AB922F767 /* dtoa.h */,
+				BEBAE87F645C4836A7DB32C5 /* en.h */,
+				D7AF1CAA454B4D09804E9697 /* encodedstream.h */,
+				48BD26C9EF914A5089890A72 /* encodings.h */,
+				91F8A7F44E874391ACB09606 /* error.h */,
+				8582C353C51742D4970F6E69 /* filereadstream.h */,
+				721B382F2A48449793F969F3 /* filestream.h */,
+				3321DDC28A00421899026C67 /* filewritestream.h */,
+				2E801FE467794B2D9758C0BD /* ieee754.h */,
+				1037D93B9E1C4AA6AE2B8AB6 /* inttypes.h */,
+				06D035846E954DD7A0E20369 /* itoa.h */,
+				01AE97B3DCC84A1FBE915D16 /* memorybuffer.h */,
+				1C2545BB8AAA42A1AB129B52 /* memorystream.h */,
+				255981ECD6D8432792AD27A2 /* meta.h */,
+				EF17CA3172DD44048A03E63D /* pow10.h */,
+				71927C5ADE3D46049BD756B2 /* prettywriter.h */,
+				803CED3E54FF4171B807B9BD /* rapidjson.h */,
+				4F8080B3173A404F9E7BD292 /* reader.h */,
+				001BFB567BCE4BF284B182CC /* stack.h */,
+				894F2C80B33D49DB9BC8892D /* stdint.h */,
+				5D8E9545EF564A0DA2F035AD /* strfunc.h */,
+				263CBAC91B4F4097A937DFAC /* stringbuffer.h */,
+				44FC13AC08484FDD8E4E0D51 /* strtod.h */,
+				79BF0AFA2CDB41BFB5733F0A /* DLNAPlugin.h */,
+				9D619FE2E1554330AF65B422 /* dial.h */,
+				5F326F9AA7104149BF910709 /* discovery.h */,
+				EF89F837D0074DB8AC321928 /* http.h */,
+				9B321E80A9A84A9D937629D2 /* log.h */,
+				4F03F6943D524978A3248932 /* media-renderer.h */,
+				2459B85A6DF142D097DA9E2B /* service.h */,
+				4C6905D5E25A401CBFBCA86E /* tinyxml2.h */,
+				C66D776E8AFE422C9AC121B3 /* util.h */,
+				FB56A9D88B404F439E2AF2C9 /* document.h */,
+				7488336F7F74499FAAC9A60A /* writer.h */,
+			);
+			name = Plugins;
+			path = hello/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		E63257F11DF938730088051B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E63257F71DF938730088051B /* dlnaclient_test */,
+				E63257F91DF938730088051B /* libdlnaclient.a */,
+				E63257FB1DF938730088051B /* dlnaclient_ios_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* hello */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "hello" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = hello;
+			productName = hello;
+			productReference = 1D6058910D05DD3D006BFB54 /* hello.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = L83CXR88RY;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "hello" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+				{
+					ProductGroup = E63257F11DF938730088051B /* Products */;
+					ProjectRef = E63257F01DF938730088051B /* dlnaclient.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* hello */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E63257F71DF938730088051B /* dlnaclient_test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dlnaclient_test;
+			remoteRef = E63257F61DF938730088051B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E63257F91DF938730088051B /* libdlnaclient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdlnaclient.a;
+			remoteRef = E63257F81DF938730088051B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E63257FB1DF938730088051B /* dlnaclient_ios_demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = dlnaclient_ios_demo.app;
+			remoteRef = E63257FA1DF938730088051B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				2BCF235EBD5C4B1A89976BE5 /* DLNAPlugin.mm in Sources */,
+				CA1C336E077E4FAD8CD8974C /* dial.cc in Sources */,
+				CF39F119BB224EE5B34A7BB8 /* discovery.cc in Sources */,
+				BE1D40AE634E4A608C6FAA78 /* http.cc in Sources */,
+				08B5869EB812477FB49459EF /* log.cc in Sources */,
+				766CB45286754EC39C9E554A /* media-renderer.cc in Sources */,
+				119C2569EE6C499EA5B8AB0B /* service.cc in Sources */,
+				E286462F9B744D9DBE4086C5 /* tinyxml2.cpp in Sources */,
+				EB8CA499B19D4C0CB5DB1A3D /* util.cc in Sources */,
+				0D97C57DC8B142B49F66DC5C /* DLNAPlugin.mm in Resources */,
+				148C329EF30746E9972133F6 /* dial.cc in Resources */,
+				0FF904A44FC34D57806015F7 /* discovery.cc in Resources */,
+				CEC826860EDD4C0FB674985E /* http.cc in Resources */,
+				0F8E11048B5B4030B00E80B6 /* log.cc in Resources */,
+				33A1D83579904BCFB275B90F /* media-renderer.cc in Resources */,
+				8DB02354BA4A4661820AA890 /* service.cc in Resources */,
+				7A7B3FD26E1843FF8931E89D /* tinyxml2.cpp in Resources */,
+				E60E7AB09E4E4FA0A76AD5A1 /* util.cc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = L83CXR88RY;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hello/hello-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"$(SRCROOT)/dial",
+					"$(SRCROOT)/dial/depe/rapidjson/include",
+					"$(SRCROOT)/dial/depe/tinyxml2",
+				);
+				INFOPLIST_FILE = "hello/hello-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.example;
+				PRODUCT_NAME = hello;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = L83CXR88RY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hello/hello-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"$(SRCROOT)/dial-master",
+					"$(SRCROOT)/dial-master/depe/rapidjson/include",
+					"$(SRCROOT)/dial-master/depe/tinyxml2",
+				);
+				INFOPLIST_FILE = "hello/hello-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.example;
+				PRODUCT_NAME = hello;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "hello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "hello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
