@@ -1,0 +1,19 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.wechatLogin.example"
+        },
+        "cordova-plugin-wechat": {
+            "WECHATAPPID": "wx8c74f72241cd32bc",
+            "PACKAGE_NAME": "com.wechatLogin.example"
+        }
+    },
+    "dependent_plugins": {}
+}
