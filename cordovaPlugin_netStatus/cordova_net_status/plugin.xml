@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="cordova_net_status"
+	version="0.0.1" >
+	<name>CordovaNetStatus</name>
+	<description>获取网络状态插件</description>
+	<js-module src="www/netStatus.js" name="netStatusPlugin">
+		<clobbers target="netStatus" />
+	</js-module>
+
+    <platform name="ios">
+        
+        <config-file parent="/*" target="config.xml">
+            <feature name="NetStatus">
+                <param name="ios-package" value="NetStatusPlugin"/>
+            </feature>
+        </config-file>
+        
+        <header-file src="src/ios/NetStatusPlugin.h" />
+        <source-file src="src/ios/NetStatusPlugin.m" />
+    </platform>
+
+	<platform name="android">
+		<source-file src="src/android/NetStatusPlugin.java" target-dir="src/com/vego/vegotv/plugin/netstatus" />
+		<source-file src="src/android/NetUtils.java" target-dir="src/com/vego/vegotv/plugin/netstatus" />
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="NetStatus">
+				<param name="android-package" value="com.vego.vegotv.plugin.netstatus.NetStatusPlugin"/>
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">  
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+        </config-file> 
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <receiver android:name=".plugin.netstatus.NetStatusBroadCast">
+	            <intent-filter>
+	                <action android:name="com.vego.vegotv.plugin.NetStatusBroadCast" />
+	            </intent-filter>
+	        </receiver>
+        </config-file>
+	</platform>
+
+</plugin>

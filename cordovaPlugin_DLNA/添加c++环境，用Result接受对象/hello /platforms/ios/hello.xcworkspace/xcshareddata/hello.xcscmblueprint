@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BE4788880E5DD28CA78DA93C365819EDB7E1E32D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BE4788880E5DD28CA78DA93C365819EDB7E1E32D" : 9223372036854775807,
+    "D49C40EE43912F23FAA461B3EA2345B35A822AE8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "10E5DBE7-0F8B-450F-9E3C-2C3C50AE9244",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BE4788880E5DD28CA78DA93C365819EDB7E1E32D" : "plugins_myself\/",
+    "D49C40EE43912F23FAA461B3EA2345B35A822AE8" : "plugins_myself\/cordovaPlugin_DLNA\/%E6%B7%BB%E5%8A%A0c++%E7%8E%AF%E5%A2%83%EF%BC%8C%E7%94%A8Result%E6%8E%A5%E5%8F%97%E5%AF%B9%E8%B1%A1\/hello%20\/platforms\/ios\/dial\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "hello",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cordovaPlugin_DLNA\/添加c++环境，用Result接受对象\/hello \/platforms\/ios\/hello.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/queli1990\/plugins_myself.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BE4788880E5DD28CA78DA93C365819EDB7E1E32D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/git.vego.tv\/gitbucket\/git\/wukong\/dial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D49C40EE43912F23FAA461B3EA2345B35A822AE8"
+    }
+  ]
+}
